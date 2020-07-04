@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIFormDefaultFieldSideIcon" customModule="Akseleran" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="NSu-WF-sm8"/>
+                <outlet property="iconButton" destination="1Lw-xq-3h3" id="60l-0c-DwN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="20" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lw-xq-3h3">
+                    <rect key="frame" x="0.0" y="10" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="UhX-ai-7z6"/>
+                        <constraint firstAttribute="height" constant="20" id="WWK-UD-Scr"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1Lw-xq-3h3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DbJ-1o-ur5"/>
+                <constraint firstItem="1Lw-xq-3h3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="KgW-74-3dE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1Lw-xq-3h3" secondAttribute="trailing" id="cRY-TP-6KZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1Lw-xq-3h3" secondAttribute="bottom" id="g2f-MK-Xzi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-371.25" y="-367.6056338028169"/>
+        </view>
+    </objects>
+</document>

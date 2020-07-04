@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "HomeViewController.collectionView(_:cellForItemAt:):HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dashboard!.category[indexPath.row].imageUrl">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.viewWillAppear(_:):HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.navigationController!.navigationBar.frame">
+            </PersistentString>
+            <PersistentString
+               value = "self.view.frame.size.height">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ProductSeachViewController.tableView(_:numberOfRowsInSection:):ProductSeachViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ProductSeachViewController.searchBar(_:textDidChange:):ProductSeachViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.filteredData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.tableView(_:cellForRowAt:):HomeViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

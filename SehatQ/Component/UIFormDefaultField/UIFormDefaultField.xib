@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIFormDefaultField" customModule="Akseleran" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLabel" destination="zZx-1W-hWb" id="ol2-Me-4xe"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="E5h-Ls-pbf"/>
+                <outlet property="formField" destination="T7U-xG-ocn" id="dQI-Ww-ySm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="545" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T7U-xG-ocn" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                    <rect key="frame" x="0.0" y="0.0" width="545" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="9dU-R6-K1D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="editingChanged:" destination="-1" eventType="editingChanged" id="3OY-Kf-QgJ"/>
+                        <action selector="editingDidBegin:" destination="-1" eventType="editingDidBegin" id="e60-i5-c8c"/>
+                        <action selector="editingDidEnd:" destination="-1" eventType="editingDidEnd" id="FCE-MC-hLb"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZx-1W-hWb">
+                    <rect key="frame" x="0.0" y="56" width="545" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="SZb-oL-YO2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="T7U-xG-ocn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="08I-Cu-b0e"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zZx-1W-hWb" secondAttribute="trailing" id="7SQ-et-lTK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="T7U-xG-ocn" secondAttribute="trailing" id="E1P-mK-F2J"/>
+                <constraint firstItem="zZx-1W-hWb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="M9h-cx-vlh"/>
+                <constraint firstItem="zZx-1W-hWb" firstAttribute="top" secondItem="T7U-xG-ocn" secondAttribute="bottom" id="T5J-9R-fWa"/>
+                <constraint firstItem="T7U-xG-ocn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="arL-0U-AlR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="261.5625" y="-289.96478873239437"/>
+        </view>
+    </objects>
+</document>
