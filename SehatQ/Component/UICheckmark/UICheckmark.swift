@@ -14,13 +14,13 @@ class UICheckmark : UIButton {
         case unchecked
     }
 
-    enum Tyoe {
+    enum CheckBoxType {
         case agreement
         case favourite
     }
 
     var currentState : CheckState = CheckState.unchecked
-    var type : Tyoe = Tyoe.favourite
+    var type : CheckBoxType = CheckBoxType.favourite
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,12 +34,17 @@ class UICheckmark : UIButton {
     
     private func setup() {
         currentState = CheckState.unchecked
+        setImage(ImageAsset.ic_love_empty, for: .normal)
+    }
+
+    func setCheckBoxType(type: CheckBoxType) {
+        self.type = type
         if (type == .favourite){
             setImage(ImageAsset.ic_love_empty, for: .normal)
         }else{
             setImage(ImageAsset.ic_checkOff, for: .normal)
         }
-    }
+     }
 
     func change() {
         if (currentState == CheckState.unchecked) {

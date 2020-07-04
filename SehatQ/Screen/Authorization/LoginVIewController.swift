@@ -91,7 +91,7 @@ extension LoginViewController {
     }
     
     private func prepareCheckBox(){
-        self.rememberMeCheck.type = .agreement
+        self.rememberMeCheck.setCheckBoxType(type: .agreement)
     }
 }
 

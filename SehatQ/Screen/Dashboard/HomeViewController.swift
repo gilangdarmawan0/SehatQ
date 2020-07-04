@@ -50,7 +50,7 @@ extension HomeViewController {
     }
     
     private func prepareCheckBoc(){
-        self.favouriteCheck.type = .favourite
+        self.favouriteCheck.setCheckBoxType(type: .favourite)
     }
     
     private func prepareLabel(){
