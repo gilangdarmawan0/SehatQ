@@ -9,4 +9,3 @@ Asumsi:
 - Button Sign-In pada login aktif saat field username dan password terisi
 - Menu dibagian bawah dashboard menggunakan kombinasi toolbar dan button
 - Test case pada XCUITest tidak berurutan dan belum ada kondisi yang menandakan sudah login atau belum
-- XCTest tidak sempat mengerjakan
